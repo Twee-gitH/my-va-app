@@ -3,7 +3,7 @@ import os
 
 # 1. Page Setup
 st.set_page_config(
-    page_title="Twee Shin G. Tan | Professional VA", 
+    page_title="Twee Shin Tan | Professional VA", 
     page_icon="💼", 
     layout="wide"
 )
@@ -12,7 +12,6 @@ st.set_page_config(
 col1, col2 = st.columns([1, 2])
 
 with col1:
-    # Check if you uploaded a photo named 'profile.jpg' to GitHub
     if os.path.exists("profile.jpg"):
         st.image("profile.jpg", width=250)
     else:
@@ -23,11 +22,14 @@ with col2:
     st.subheader("Program Developer & Specialized Virtual Assistant")
     st.write("📍 Tagum, Davao Region, Philippines")
     st.write("---")
+    
+    # Updated description with "Reliability" and "Common Sense" traits
     st.write("""
-    I am a tech-savvy professional combining **Program Development** expertise with 
-    high-level **Virtual Assistance**. I specialize in providing structured administrative 
-    support for the **Medical and Legal** sectors, ensuring data accuracy and 
-    professional documentation.
+    A tech-savvy and highly reliable professional bridging the gap between **Program Development** and high-level **Virtual Assistance**. Known for strong operational common sense and a 
+    proactive approach to problem-solving, ensuring tasks are handled with minimal supervision. 
+    Specializes in delivering structured administrative support tailored for the 
+    **Medical and Legal** sectors, combining technical precision with a commitment 
+    to data integrity and professional documentation.
     """)
 
 # 3. Expertise / Skills Section
@@ -37,47 +39,36 @@ c1, c2, c3 = st.columns(3)
 with c1:
     st.markdown("### 🏥 Medical VA")
     st.write("""
-    - Medical Terminology
+    - Medical Terminology Accuracy
     - Patient Data Management
     - HIPAA Compliance Awareness
-    - Appointment Scheduling
+    - Strategic Appointment Scheduling
     """)
 
 with c2:
     st.markdown("### ⚖️ Legal VA")
     st.write("""
-    - Legal Transcription
+    - Precision Legal Transcription
     - Case Document Formatting
-    - Filing & Record Keeping
-    - Research Assistance
+    - Systematic Record Keeping
+    - Preliminary Legal Research
     """)
 
 with c3:
-    st.markdown("### 💻 Technical")
+    st.markdown("### 💡 Core Strengths") # Changed from Technical to show your traits
     st.write("""
-    - Python Programming
-    - MS Office (Word, Excel)
-    - GitHub & Cloud Deploy
-    - Data Extraction/OCR
+    - **Proactive Problem Solving:** Intuitive "common sense" approach to daily obstacles.
+    - **Reliability:** Consistent delivery on deadlines and high-stakes tasks.
+    - **Technical Logic:** Python scripting and workflow automation.
+    - **Data Integrity:** Extreme attention to detail in legal/medical files.
     """)
 
-# 4. Contact Section
+# 4. Contact & Links Section
 st.divider()
 st.header("Get In Touch")
 st.write("📧 **Email:** tweeshingarciatan@gmail.com")
-st.write("🔗 **GitHub:** [github.com/Twee-gitH](https://github.com/Twee-gitH)")
+st.write("🔗 **GitHub Portfolio:** [github.com/Twee-gitH](https://github.com/Twee-gitH)")
 
-# 5. Signature Section (Bottom Right)
+# Footer
 st.write("##")
-sig_col1, sig_col2 = st.columns([3, 1])
-
-with sig_col2:
-    st.write("Respectfully,")
-    # Check if you uploaded 'signature.png' to GitHub
-    if os.path.exists("signature.png"):
-        st.image("signature.png", width=180)
-    else:
-        st.write("*(Signature)*")
-    st.markdown("### **Twee Shin Tan**")
-    st.write("Professional VA / Developer")
-    
+st.caption("© 2026 Twee Shin Tan | Professional Virtual Assistant Portfolio")
