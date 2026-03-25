@@ -3,7 +3,7 @@ import os
 
 # 1. Page Setup
 st.set_page_config(
-    page_title="Twee Shin Tan | Professional VA", 
+    page_title="Twee Shin G. Tan | Professional VA", 
     page_icon="💼", 
     layout="wide"
 )
