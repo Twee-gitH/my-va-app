@@ -3,7 +3,7 @@ import os
 
 # 1. Page Setup
 st.set_page_config(
-    page_title="Twee Shin Tan | Professional VA", 
+    page_title="Twee Shin G. Tan | Professional VA", 
     page_icon="💼", 
     layout="wide"
 )
@@ -18,23 +18,24 @@ with col1:
         st.info("Upload 'profile.jpg' to GitHub to show your photo here.")
 
 with col2:
-    st.title("Twee Shin Tan")
+    st.title("Twee Shin G. Tan")
     st.subheader("Program Developer & Specialized Virtual Assistant")
     st.write("📍 Tagum, Davao Region, Philippines")
     st.write("---")
     
-    # Updated description with "Reliability" and "Common Sense" traits
+    # Description updated to include Real Estate
     st.write("""
     A tech-savvy and highly reliable professional bridging the gap between **Program Development** and high-level **Virtual Assistance**. Known for strong operational common sense and a 
     proactive approach to problem-solving, ensuring tasks are handled with minimal supervision. 
     Specializes in delivering structured administrative support tailored for the 
-    **Medical and Legal** sectors, combining technical precision with a commitment 
-    to data integrity and professional documentation.
+    **Medical, Legal, and Real Estate** sectors, combining technical precision 
+    with a commitment to data integrity and professional documentation.
     """)
 
-# 3. Expertise / Skills Section
+# 3. Expertise / Skills Section (Now 4 Columns for better layout)
 st.header("Professional Expertise")
-c1, c2, c3 = st.columns(3)
+c1, c2 = st.columns(2)
+c3, c4 = st.columns(2)
 
 with c1:
     st.markdown("### 🏥 Medical VA")
@@ -55,12 +56,21 @@ with c2:
     """)
 
 with c3:
-    st.markdown("### 💡 Core Strengths") # Changed from Technical to show your traits
+    st.markdown("### 🏠 Real Estate VA")
     st.write("""
-    - **Proactive Problem Solving:** Intuitive "common sense" approach to daily obstacles.
-    - **Reliability:** Consistent delivery on deadlines and high-stakes tasks.
+    - Property Listing Management
+    - CRM Data Entry & Lead Tracking
+    - Transaction Coordination Support
+    - Comparative Market Analysis (CMA) Assistance
+    """)
+
+with c4:
+    st.markdown("### 💡 Core Strengths")
+    st.write("""
+    - **Proactive Problem Solving:** Intuitive approach to daily obstacles.
+    - **Reliability:** Consistent delivery on high-stakes tasks.
     - **Technical Logic:** Python scripting and workflow automation.
-    - **Data Integrity:** Extreme attention to detail in legal/medical files.
+    - **Data Integrity:** Extreme attention to detail across all sectors.
     """)
 
 # 4. Contact & Links Section
@@ -71,4 +81,4 @@ st.write("🔗 **GitHub Portfolio:** [github.com/Twee-gitH](https://github.com/T
 
 # Footer
 st.write("##")
-st.caption("© 2026 Twee Shin Tan | Professional Virtual Assistant Portfolio")
+st.caption("© 2026 Twee Shin G. Tan | Professional Virtual Assistant Portfolio")
